@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;700&display=swap");
+
+:root {
+  --color__red: #d90429;
+  --color__red--transparent: #d9042788;
+  --color__light: #edf2f4;
+  --color__dark: #2b2d42;
+  --color__grey: #8d99ae;
+  --font__kanit: "Kanit", sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  min-height: 100dvh;
+}
+
+body {
+  font-family: var(--font__kanit);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text__primary {
+  color: var(--color__dark);
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.text__secondary {
+  color: var(--color__dark);
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+.btn--primary {
+  color: var(--color__red);
+  background-color: var(--color__light);
+  border: 2px solid var(--color__red);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.btn--primary:hover,
+.btn--primary:focus {
+  color: var(--color__light);
+  background-color: var(--color__red);
+}
+.btn--primary:active {
+  background-color: var(--color__red--transparent);
+}

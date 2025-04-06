@@ -1,0 +1,50 @@
+.signUp {
+  padding: 5rem;
+  min-height: calc(100dvh - 5rem);
+  background-color: var(--color__grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.multiForm {
+  width: 50rem;
+  min-height: 10rem;
+  background-color: var(--color__light);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.multiForm__action {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+}
+
+.multiForm__btn {
+  cursor: pointer;
+  padding: 0;
+  flex: 3;
+  background-color: var(--color__red);
+  color: var(--color__light);
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 300;
+  border: 2px solid var(--color__light);
+  border-radius: 0.6rem;
+  transition: flex 0.2s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.multiForm__btn--active {
+  cursor: not-allowed;
+  background-color: var(--color__light);
+  color: var(--color__red);
+  font-weight: 600;
+  flex: 4;
+}
+
+.multiForm__form {
+  padding: 1rem 2rem;
+}
